@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-11-09 16:58:36
  * @LastEditors: 高文海
- * @LastEditTime: 2021-11-10 19:22:00
+ * @LastEditTime: 2021-11-10 22:12:26
  * @FilePath: \VueBackgroundProject\wenhai\src\main.js
  */
 import Vue from 'vue'
@@ -44,10 +44,10 @@ Vue.prototype.$API = API
  * Currently MockJs will be used in the production environment,
  * please remove it before going online ! ! !
  */
-if (process.env.NODE_ENV === 'production') {
-  const { mockXHR } = require('../mock')
-  mockXHR()
-}
+// if (process.env.NODE_ENV === 'production') {
+//   const { mockXHR } = require('../mock')
+//   mockXHR()
+// }
 
 // set ElementUI lang to EN
 Vue.use(ElementUI, { locale })
