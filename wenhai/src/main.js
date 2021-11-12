@@ -1,8 +1,8 @@
 /*
  * @Date: 2021-11-09 16:58:36
  * @LastEditors: 高文海
- * @LastEditTime: 2021-11-10 22:12:26
- * @FilePath: \VueBackgroundProject\wenhai\src\main.js
+ * @LastEditTime: 2021-11-12 17:06:16
+ * @FilePath: \wenhai\src\main.js
  */
 import Vue from 'vue'
 // 引入样式重置表
@@ -50,12 +50,12 @@ Vue.prototype.$API = API
 // }
 
 // set ElementUI lang to EN
-Vue.use(ElementUI, { locale })
+// Vue.use(ElementUI, { locale })
 // 如果想要中文版 element-ui，按如下方式声明
-// Vue.use(ElementUI)
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
-console.log(API)
+// console.log(API)
 new Vue({
   el: '#app',
   router,

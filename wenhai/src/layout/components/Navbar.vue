@@ -5,6 +5,8 @@
     <breadcrumb class="breadcrumb-container" />
 
     <div class="right-menu">
+      <!-- 动态展示右上角的name属性 -->
+      <span class="right-menu-item">{{ name }}</span>
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
@@ -12,7 +14,7 @@
         </div>
         <el-dropdown-menu slot="dropdown" class="user-dropdown">
           <router-link to="/">
-          <!-- 首页按钮 -->
+            <!-- 首页按钮 -->
             <el-dropdown-item>首页</el-dropdown-item>
           </router-link>
           <!-- <a target="_blank" href="https://github.com/PanJiaChen/vue-admin-template/">
@@ -21,7 +23,6 @@
           <a target="_blank" href="https://panjiachen.github.io/vue-element-admin-site/#/">
             <el-dropdown-item>Docs</el-dropdown-item>
           </a> -->
-
 
           <el-dropdown-item divided @click.native="logout">
             <!-- 退出按钮 -->
@@ -46,7 +47,8 @@ export default {
   computed: {
     ...mapGetters([
       'sidebar',
-      'avatar'
+      'avatar',
+      'name'
     ])
   },
   methods: {
