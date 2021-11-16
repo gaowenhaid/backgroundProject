@@ -1,7 +1,7 @@
 <!--
  * @Date: 2021-11-10 15:47:08
  * @LastEditors: 高文海
- * @LastEditTime: 2021-11-15 16:12:07
+ * @LastEditTime: 2021-11-16 14:28:55
  * @FilePath: \wenhai\src\views\product\Attr\index.vue
 -->
 <template>
@@ -176,10 +176,10 @@
 // import { attr } from '@/api';
 import cloneDeep from "lodash/cloneDeep";
 import debounce from "lodash/debounce";
-import categorySelector from "../categorySelector";
+// import categorySelector from "../categorySelector";
 export default {
   name: "Attr",
-  components: { categorySelector },
+  // components: { categorySelector },
   data() {
     return {
       category1Id: "", // 一级菜单数据

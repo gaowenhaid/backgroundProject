@@ -1,7 +1,7 @@
 /*
  * @Date: 2021-11-09 16:58:36
  * @LastEditors: 高文海
- * @LastEditTime: 2021-11-15 09:28:31
+ * @LastEditTime: 2021-11-16 14:30:25
  * @FilePath: \wenhai\src\main.js
  */
 import Vue from 'vue'
@@ -38,8 +38,8 @@ Vue.prototype.$API = API
 
 // 全局注册按钮组件
 import HinButton from '@/components/HintButton'
-
-
+import categorySelector from '@/views/product/components/categorySelector'
+Vue.component(categorySelector.name, categorySelector)
 Vue.component(HinButton.name, HinButton)
 
 /**
